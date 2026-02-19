@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #9ad5ff 0%, #d7f0ff 65%, #fef8de 100%);
+}
+
+.wrapper {
+  width: min(92vw, 700px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.instructions {
+  text-align: center;
+  margin-top: 0;
+  color: #1f3f5a;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.hud div {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  color: #1c3246;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(31, 63, 90, 0.18);
+}
+
+.game-area {
+  position: relative;
+  height: min(65vh, 500px);
+  border: 3px solid #2e5d84;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #74bfff 0%, #a6dcff 65%, #d6f0a8 100%);
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(31, 63, 90, 0.22);
+}
+
+.letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #2e5d84;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1d3650;
+  user-select: none;
+}
+
+.ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 28px;
+  background: #6a4a2f;
+  border-top: 4px solid #4a331f;
+}

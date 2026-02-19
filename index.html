@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Letters</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Sky Letters</h1>
+      <p class="instructions">
+        Type the falling letter before it hits the ground.
+      </p>
+
+      <section class="hud">
+        <div><span>Score:</span> <strong id="score">0</strong></div>
+        <div><span>Hits:</span> <strong id="hits">0</strong></div>
+        <div><span>Misses:</span> <strong id="misses">0</strong></div>
+        <div><span>Hit streak:</span> <strong id="hitStreak">0</strong></div>
+        <div><span>Miss streak:</span> <strong id="missStreak">0</strong></div>
+        <div><span>Speed:</span> <strong id="speed">1.00x</strong></div>
+      </section>
+
+      <section id="gameArea" class="game-area" aria-label="Letter game area">
+        <div id="letter" class="letter" aria-live="polite"></div>
+        <div class="ground"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
